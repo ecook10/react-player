@@ -59,7 +59,8 @@ export class YouTube extends Component {
           onReady: this.props.onReady,
           onStateChange: this.onStateChange,
           onError: event => onError(event.data)
-        }
+        },
+        autoplay: '1'
       })
       if (loop) {
         this.player.setLoop(true) // Enable playlist looping
